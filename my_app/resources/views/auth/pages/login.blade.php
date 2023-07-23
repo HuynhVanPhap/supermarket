@@ -101,7 +101,7 @@
                     <a href="forgot-password.html">{{ __('I forgot my password') }}</a>
                 </p>
                 <p class="mb-0">
-                    <a href="{{ route('register.page') }}" class="text-center">{{ __('Register a new membership') }}</a>
+                    <a href="{{ route('register.page') }}" class="text-center">{!! __('Register a new membership') !!}</a>
                 </p>
             </div>
 

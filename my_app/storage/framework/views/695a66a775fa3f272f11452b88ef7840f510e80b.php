@@ -138,7 +138,7 @@ unset($__errorArgs, $__bag); ?>
                     <a href="forgot-password.html"><?php echo e(__('I forgot my password')); ?></a>
                 </p>
                 <p class="mb-0">
-                    <a href="<?php echo e(route('register.page')); ?>" class="text-center"><?php echo e(__('Register a new membership')); ?></a>
+                    <a href="<?php echo e(route('register.page')); ?>" class="text-center"><?php echo __('Register a new membership'); ?></a>
                 </p>
             </div>
 

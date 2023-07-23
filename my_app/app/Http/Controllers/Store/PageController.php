@@ -109,11 +109,9 @@ class PageController extends Controller
 
     public function customerInfo()
     {
-        return (Auth::check())
-            ? redirect()->route('payment.page')
-            : view('store.pages.customer-info')->with([
-                'navigation' => $this->getNavigation(),
-            ]);
+        return view('store.pages.customer-info')->with([
+            'navigation' => $this->getNavigation(),
+        ]);
     }
 
     public function payment()
