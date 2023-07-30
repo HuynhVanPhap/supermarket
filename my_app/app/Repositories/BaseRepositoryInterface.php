@@ -106,4 +106,12 @@ interface BaseRepositoryInterface
      * @return int
      */
     public function countNewToday(): int;
+
+    /**
+     * Create new instance and return it's id
+     *
+     * @param array $modelParams
+     * @return int
+     */
+    public function createAndGetId(array $modelParams): int;
 }

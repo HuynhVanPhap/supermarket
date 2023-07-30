@@ -73,7 +73,7 @@
                     <div class="row">
                         <div class="col-7">
                             <div class="icheck-primary">
-                                <input type="checkbox" id="remember">
+                                <input type="checkbox" id="remember" name="remember">
                                 <label for="remember">
                                     {{ __('Remember Me') }}
                                 </label>
@@ -89,17 +89,17 @@
 
                 <div class="social-auth-links text-center mb-3">
                     <p>-<b> {{ __('Or') }} </b>-</p>
-                    <a href="#" class="btn btn-block btn-primary">
+                    {{-- <a href="{{ route('auth.social', ['provider' => 'facebook']) }}" class="btn btn-block btn-primary">
                         <i class="fab fa-facebook mr-2"></i> {!! __('Sign in using Facebook') !!}
-                    </a>
-                    <a href="#" class="btn btn-block btn-danger">
+                    </a> --}}
+                    <a href="{{ route('auth.social', ['provider' => 'google']) }}" class="btn btn-block btn-danger">
                         <i class="fab fa-google-plus mr-2"></i> {!! __('Sign in using Google+') !!}
                     </a>
                 </div>
 
-                <p class="mb-1">
+                {{-- <p class="mb-1">
                     <a href="forgot-password.html">{{ __('I forgot my password') }}</a>
-                </p>
+                </p> --}}
                 <p class="mb-0">
                     <a href="{{ route('register.page') }}" class="text-center">{!! __('Register a new membership') !!}</a>
                 </p>

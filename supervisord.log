@@ -4135,3 +4135,59 @@
 2023-07-23 10:33:44,414 INFO exited: laravel-worker_00 (exit status 0; expected)
 2023-07-23 10:33:45,421 INFO spawned: 'laravel-worker_00' with pid 40
 2023-07-23 10:33:46,423 INFO success: laravel-worker_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-07-23 11:14:23,439 INFO exited: laravel-worker_00 (exit status 0; expected)
+2023-07-23 11:14:24,444 INFO spawned: 'laravel-worker_00' with pid 49
+2023-07-23 11:14:25,446 INFO success: laravel-worker_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-07-29 22:47:54,106 INFO Included extra file "/etc/supervisor.d/mail-worker.conf" during parsing
+2023-07-29 22:47:54,107 INFO Included extra file "/etc/supervisor.d/php-fpm.conf" during parsing
+2023-07-29 22:47:54,107 INFO Set uid to user 0 succeeded
+2023-07-29 22:47:54,111 INFO supervisord started with pid 7
+2023-07-29 22:47:55,114 INFO spawned: 'laravel-worker_00' with pid 8
+2023-07-29 22:47:55,116 INFO spawned: 'php-fpm' with pid 9
+2023-07-29 22:47:56,279 INFO success: laravel-worker_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-07-29 22:47:56,279 INFO success: php-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-07-29 23:28:33,720 INFO Included extra file "/etc/supervisor.d/mail-worker.conf" during parsing
+2023-07-29 23:28:33,720 INFO Included extra file "/etc/supervisor.d/php-fpm.conf" during parsing
+2023-07-29 23:28:33,720 INFO Set uid to user 0 succeeded
+2023-07-29 23:28:33,722 INFO supervisord started with pid 7
+2023-07-29 23:28:34,725 INFO spawned: 'laravel-worker_00' with pid 8
+2023-07-29 23:28:34,727 INFO spawned: 'php-fpm' with pid 9
+2023-07-29 23:28:35,776 INFO success: laravel-worker_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-07-29 23:28:35,776 INFO success: php-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-07-30 00:28:38,537 INFO exited: laravel-worker_00 (exit status 0; expected)
+2023-07-30 00:28:39,542 INFO spawned: 'laravel-worker_00' with pid 238
+2023-07-30 00:28:40,543 INFO success: laravel-worker_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-07-30 01:12:46,597 INFO exited: laravel-worker_00 (exit status 0; expected)
+2023-07-30 01:12:47,600 INFO spawned: 'laravel-worker_00' with pid 247
+2023-07-30 01:12:48,602 INFO success: laravel-worker_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-07-30 10:39:27,676 INFO Included extra file "/etc/supervisor.d/mail-worker.conf" during parsing
+2023-07-30 10:39:27,677 INFO Included extra file "/etc/supervisor.d/php-fpm.conf" during parsing
+2023-07-30 10:39:27,677 INFO Set uid to user 0 succeeded
+2023-07-30 10:39:27,681 INFO supervisord started with pid 8
+2023-07-30 10:39:28,684 INFO spawned: 'laravel-worker_00' with pid 9
+2023-07-30 10:39:28,689 INFO spawned: 'php-fpm' with pid 10
+2023-07-30 10:39:30,044 INFO success: laravel-worker_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-07-30 10:39:30,044 INFO success: php-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-07-30 11:39:30,712 INFO exited: laravel-worker_00 (exit status 0; expected)
+2023-07-30 11:39:31,717 INFO spawned: 'laravel-worker_00' with pid 94
+2023-07-30 11:39:32,718 INFO success: laravel-worker_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-07-30 16:12:35,219 INFO exited: laravel-worker_00 (exit status 0; expected)
+2023-07-30 16:12:36,223 INFO spawned: 'laravel-worker_00' with pid 107
+2023-07-30 16:12:37,225 INFO success: laravel-worker_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-07-30 17:12:38,852 INFO exited: laravel-worker_00 (exit status 0; expected)
+2023-07-30 17:12:39,855 INFO spawned: 'laravel-worker_00' with pid 160
+2023-07-30 17:12:40,857 INFO success: laravel-worker_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-07-30 18:12:42,446 INFO exited: laravel-worker_00 (exit status 0; expected)
+2023-07-30 18:12:43,452 INFO spawned: 'laravel-worker_00' with pid 169
+2023-07-30 18:12:44,454 INFO success: laravel-worker_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-07-30 18:50:38,831 INFO exited: laravel-worker_00 (exit status 0; expected)
+2023-07-30 18:50:39,837 INFO spawned: 'laravel-worker_00' with pid 178
+2023-07-30 18:50:40,839 INFO success: laravel-worker_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-07-30 23:15:33,001 INFO Included extra file "/etc/supervisor.d/mail-worker.conf" during parsing
+2023-07-30 23:15:33,002 INFO Included extra file "/etc/supervisor.d/php-fpm.conf" during parsing
+2023-07-30 23:15:33,002 INFO Set uid to user 0 succeeded
+2023-07-30 23:15:33,005 INFO supervisord started with pid 7
+2023-07-30 23:15:34,007 INFO spawned: 'laravel-worker_00' with pid 8
+2023-07-30 23:15:34,009 INFO spawned: 'php-fpm' with pid 9
+2023-07-30 23:15:35,159 INFO success: laravel-worker_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-07-30 23:15:35,159 INFO success: php-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)

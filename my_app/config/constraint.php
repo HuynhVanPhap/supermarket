@@ -89,5 +89,8 @@ return [
     ],
     'form' => [
         'products' => 'bieu-mau-them-moi-san-pham.xlsx'
+    ],
+    'socials' => [
+        'google'
     ]
 ];

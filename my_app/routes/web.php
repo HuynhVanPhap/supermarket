@@ -44,6 +44,8 @@ Route::middleware('is.login')->group(function () {
     Route::post('login', [AuthController::class, 'login'])->name('login');
     Route::get('register', [AuthController::class, 'signUpPage'])->name('register.page');
     Route::post('register', [AuthController::class, 'signUp'])->name('register');
+    Route::get('/social/{provider}', [AuthController::class, 'redirect'])->name('auth.social')->middleware('social.allow');
+    Route::get('/callback/{provider}', [AuthController::class, 'callback'])->name('auth.social.callback');
 });
 
 Route::get('cart', [PageController::class, 'cart'])->name('cart.page');

@@ -194,5 +194,8 @@
     "Uploading": "Tệp đang được tải lên...",
     "Download success": "Tải thành công",
     "Code field": "Mã :field",
+    "Login fail": "Đăng nhập thất bại",
+    "Not updated": "Chưa cập nhật",
+    "Driver not allow": "Phương thức đăng nhập chưa được cho phép",
     "Content Order": "Cảm ơn quý khách hàng đã tin tưởng và lựa chọn sản phẩm của chúng tôi. Đơn hàng của bạn đang được chuẩn bị và sẽ được đơn vị vận chuyển của chúng tôi chuyển đến quý khách hàng sớm nhất có thể."
 }

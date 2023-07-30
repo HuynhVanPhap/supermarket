@@ -46,6 +46,14 @@ abstract class BaseRepository implements BaseRepositoryInterface
     /**
      * @inheritdoc
      */
+    public function createAndGetId(array $modelParams): int
+    {
+        return $this->model->insertGetId($modelParams);
+    }
+
+    /**
+     * @inheritdoc
+     */
     public function update(int $id, array $params): bool
     {
         return $this->model->whereId($id)->update($params);

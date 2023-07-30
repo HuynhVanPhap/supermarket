@@ -6,9 +6,11 @@ use App\Http\Requests\LoginRequest;
 use App\Http\Requests\RegisterRequest;
 use App\Models\Role;
 use App\Repositories\User\UserRepositoryInterface;
+use Illuminate\Contracts\Session\Session;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
+use Laravel\Socialite\Facades\Socialite;
 
 class AuthController extends Controller
 {
@@ -31,7 +33,9 @@ class AuthController extends Controller
             'password' => $request->password
         ];
 
-        if (Auth::attempt($credentials)) {
+        $remember_me = $request->has('remember') ? true : false;
+
+        if (Auth::attempt($credentials, $remember_me)) {
             $request->session()->regenerate();
 
             return (Auth::user()->role->value <= config('constraint.roles.admin'))
@@ -83,6 +87,49 @@ class AuthController extends Controller
 
         return back()->withErrors([
             'fail' => __('Register fail'),
+        ]);
+    }
+
+    public function redirect(string $provider)
+    {
+        return Socialite::driver($provider)->redirect();
+    }
+
+    public function callback(string $provider)
+    {
+        $getInfo = Socialite::driver($provider)->stateless()->user();
+
+        // Nếu thông tin facebook trả về không có Email thì thông báo
+        if(!blank($getInfo)) {
+            // Tìm User trong hệ thống thông qua Email
+            $user = $this->userRepo->getByEmail($getInfo->email);
+            // Nếu chưa tồn tại thì tạo mới User
+            if(blank($user)) {
+                $userParams = [
+                    'name' => $getInfo->getName(),
+                    'email' => $getInfo->getEmail(),
+                    'password' => Hash::make('Ab12345!'),
+                    'phone' => __('Not updated'),
+                    'address' => __('Not updated'),
+                    'role_id' => Role::whereValue(config('constraint.roles.customer'))->first()->id
+                ];
+
+                // Thêm người dùng và trả về id người dùng đó
+                $user = $this->userRepo->create($userParams);
+            }
+            /**
+             * @param User $user
+             * @param bool $remember_me
+             */
+            Auth::login($user, true);
+
+            return (Auth::user()->role->value <= config('constraint.roles.admin'))
+                    ? redirect()->route('admin.dashboard.page')
+                    : redirect()->route('admin.users.show', Auth::user()->email);
+        }
+
+        return back()->withErrors([
+            'failAuth' => __('Login fail'),
         ]);
     }
 }

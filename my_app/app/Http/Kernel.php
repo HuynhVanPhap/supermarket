@@ -69,5 +69,6 @@ class Kernel extends HttpKernel
         'is.login' => \App\Http\Middleware\IsLogin::class,
         'had.login' => \App\Http\Middleware\HadLogin::class,
         'is.manager' => \App\Http\Middleware\IsManger::class,
+        'social.allow' => \App\Http\Middleware\SocialAllow::class,
     ];
 }
