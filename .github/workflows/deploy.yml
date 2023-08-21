@@ -18,4 +18,4 @@ jobs:
           server: superrmarkett.myartsonline.com
           username: 4347922
           password: ${{ secrets.FTP_AWARDSPACE_PASSWORD }}
-          server-dir: /home/www/superrmarkett.myartsonline.com/
+          server-dir: /superrmarkett.myartsonline.com/
