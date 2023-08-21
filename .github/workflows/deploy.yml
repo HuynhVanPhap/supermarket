@@ -1,0 +1,21 @@
+name: Deploy to server
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+jobs:
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get latest code
+        uses: actions/checkout@v3
+      
+      - name: Sync files
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        with:
+          server: superrmarkett.myartsonline.com
+          username: 4347922
+          password: ${{ secrets.FTP_AWARDSPACE_PASSWORD }}
+          server-dir: /home/www/superrmarkett.myartsonline.com
