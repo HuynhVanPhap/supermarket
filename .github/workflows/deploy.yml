@@ -15,7 +15,9 @@ jobs:
       - name: Sync files
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
-          server: superrmarkett.myartsonline.com
+          server: f28-preview.awardspace.net
           username: 4347922
           password: ${{ secrets.FTP_AWARDSPACE_PASSWORD }}
           server-dir: /superrmarkett.myartsonline.com/
+          port: 21
+          timeout: 1000000
