@@ -1,0 +1,12 @@
+name: Testing process
+on:
+  pull_request:
+    types: [closed]
+    branches: [test]
+jobs:
+  testing:
+    name: Test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hello World
+        run: echo "The first step on Testing tutorial !"
