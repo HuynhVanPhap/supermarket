@@ -15,6 +15,7 @@ jobs:
         with:
           php_version: 8
           working_dir: my_app/
+          command: composer update
       - name: Copy .env
         run: php -r "file_exists('.env') || copy('.env.example', '.env');"
       - name: Generate key
