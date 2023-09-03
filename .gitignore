@@ -1,2 +1,2 @@
-.supervisord.log
-.supervisord.pid
+supervisord.log
+supervisord.pid
