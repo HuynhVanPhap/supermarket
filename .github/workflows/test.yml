@@ -22,10 +22,7 @@ jobs:
         run: |
           cd my_app/
           php -r "file_exists('.env') || copy('.env.example', '.env');"
-      - name: Directory Permissions
+      - name: Execute tests (Unit and Feature tests) via PHPUnit
         run: |
           cd my_app/
-          chown -R www-data .
-          chmod -R 777 bootstrap/cache
-      - name: Execute tests (Unit and Feature tests) via PHPUnit
-        run: vendor/bin/phpunit --testdox
+          vendor/bin/phpunit --testdox
